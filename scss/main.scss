@@ -1,0 +1,47 @@
+// colors
+$darkgrey: #2f3234;
+$yellow: #f9b43b;
+$red: #e45028;
+$green: #95c550;
+
+
+// resolutions
+$desktops: 1200px;
+$laptops: 992px;
+$tablets: 768px;
+$phones: 480px;
+$smallphones: 360px;
+
+
+// normalize
+@import "_setups/_normalize";
+
+
+// media
+@import "_setups/_media";
+
+
+// setups
+@import "_setups/_fonts";
+@import "_setups/_mixins";
+@import "_setups/_base";
+@import "_setups/_layout";
+
+
+//sections
+@import "_sections/_promo";
+@import "_sections/_best";
+@import "_sections/_burgers";
+@import "_sections/_team";
+@import "_sections/_menu";
+@import "_sections/_reviews";
+@import "_sections/_order";
+@import "_sections/_contacts";
+
+
+//components
+@import "_components/_hamburger-menu";
+@import "_components/_buttons";
+@import "_components/_arrow-scroll";
+@import "_components/_slider-ingreds";
+@import "_components/_dot-scroll";

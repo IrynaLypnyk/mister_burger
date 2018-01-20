@@ -1,0 +1,168 @@
+.menu{
+    background-image: url("../img/bg/menubg.jpg");
+    @include cover();
+    
+}
+
+.menu__title{
+    position: absolute;
+    top: rem(113px);
+    left: rem(93px);
+
+    @include tablets(){
+        left: rem(20px);
+    }
+}
+
+.menu-acco{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    cursor: pointer;
+    // justify-content: center;
+    // align-items: stretch;
+    
+}
+
+.menu-acco__item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    &_meat{
+        right: rem(160px);
+    }
+
+    &_vega{
+        right: rem(80px);
+    }
+
+    &_diet{
+        right: 0px;
+    }
+
+    &:hover{
+
+        cursor: pointer;
+            
+    }
+        
+
+    &.active{  
+        .menu-acco__title_dropdown{
+            color: $yellow;
+        }
+
+        .menu-acco__dropdown{
+              width: 60vw;
+    
+            @include tablets{
+                width: 75vw;
+            }
+           
+        }
+    
+    }
+}
+
+.menu-acco__title-container{
+    width: rem(80px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+      
+    
+    &_meat{
+        background-image: url("../img/bg/menu_meat.jpg");
+        @include cover();
+    }
+
+    &_vega{
+        background-image: url("../img/bg/menu_vega.jpg");
+        @include cover();
+    }
+
+    &_diet{
+        background-image: url("../img/bg/menu_diet.jpg");
+        @include cover();
+    }
+
+   
+    &:hover{
+        color: $yellow;
+    }
+
+    @include tablets(){
+        align-items: flex-end;
+    }
+
+}
+
+.menu-acco__title{
+    @include gagalin();
+    font-size: 40px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+
+    
+    @include tablets(){
+       transform: rotate(-90deg) translateX(60%);
+    }
+
+    @include smallphones(){
+        font-size: 30px;
+    }
+}
+
+
+.menu-acco__dropdown{
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    background-color: rgba($darkgrey, .93);
+    display: flex;
+    transition: width 1s;
+
+    &_meat{
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &_vega{
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &_diet{
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+}
+
+.menu-acco__dropdown-text{
+    padding: 55px 33px;
+    @include ubuntu(light);
+    line-height: 24px;
+  
+
+    @include smallphones{
+        line-height: 1.6;
+        padding: 10px 10px;
+        
+    }
+   
+}
+
+

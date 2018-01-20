@@ -1,0 +1,29 @@
+
+.arrow-scroll__link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0;
+}
+
+.arrow-scroll__icon{
+    width: 30px;
+    height: 15px;
+    fill: #fff;
+}
+
+.arrow-scroll_down{
+    position: absolute;
+    bottom: 10%;
+
+    @include tablets(){
+        bottom: 5%;
+    }
+}
+
+.arrow-scroll_left{
+    transform: rotate(90deg);
+}
+
+.arrow-scroll_right{
+    transform: rotate(-90deg);
+}
