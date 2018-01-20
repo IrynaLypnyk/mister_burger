@@ -4,6 +4,6 @@
 
 <p><strong>Наставник: </strong>Юрий Кучма</p>
 
-<h3>Демо: <a href="https://irynalypnyk.github.io/mister_burger/">https://irynalypnyk.github.io/mister_burger/</a></h3>
+<h3>Демо: <a href="https://irynalypnyk.github.io/mister_burger/index.html">https://irynalypnyk.github.io/mister_burger/</a></h3>
 
 <p>HTML5, CSS3,Flexbox, Sass, SVG, JavaScript, jQuery, Ajax, PHP basics, Adaptive </p>
