@@ -155,6 +155,10 @@
     padding: 55px 33px;
     @include ubuntu(light);
     line-height: 24px;
+
+    & p{
+        width: 100%;
+    }
   
 
     @include smallphones{
