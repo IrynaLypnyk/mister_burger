@@ -1469,6 +1469,11 @@ body {
 .order__title {
   color: #f9b43b;
   text-align: center; }
+  @media screen and (max-width: 360px) {
+    .order__title {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 10px; } }
 
 .form__container {
   width: 100%;
@@ -1557,6 +1562,9 @@ body {
 .form__input_textarea {
   resize: none;
   height: 115px; }
+  @media screen and (max-width: 360px) {
+    .form__input_textarea {
+      height: 60px; } }
 
 .form__label-block_radio,
 .form__label-block_checkbox {

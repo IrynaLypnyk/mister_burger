@@ -11,6 +11,12 @@
 .order__title{
     color: $yellow;
     text-align: center;
+  @include smallphones{
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
 }
 
 
@@ -105,6 +111,10 @@
 .form__input_textarea{
     resize: none;
     height: 115px;
+
+  @include smallphones{
+    height: 60px;
+  }
 
 }
 
