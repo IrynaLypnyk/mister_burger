@@ -507,7 +507,7 @@ body {
 
 .section {
   background-color: #2f3234;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +524,7 @@ body {
 .container {
   width: 95%;
   max-width: 940px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   position: relative;
   display: -webkit-box;
