@@ -12,14 +12,11 @@ $tablets: 768px;
 $phones: 480px;
 $smallphones: 360px;
 
-
 // normalize
 @import "_setups/_normalize";
 
-
 // media
 @import "_setups/_media";
-
 
 // setups
 @import "_setups/_fonts";
@@ -40,7 +37,8 @@ $smallphones: 360px;
 
 
 //components
-@import "_components/_hamburger-menu";
+@import "_components/hamburger-btn";
+@import "_components/overlay-menu";
 @import "_components/_buttons";
 @import "_components/_arrow-scroll";
 @import "_components/_slider-ingreds";

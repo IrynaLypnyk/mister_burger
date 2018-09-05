@@ -1,6 +1,6 @@
 .idea/
 .vscode/
-
+*.ink
 
 # Compiled source #
 ###################

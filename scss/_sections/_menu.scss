@@ -1,7 +1,6 @@
 .menu{
     background-image: url("../img/bg/menubg.jpg");
     @include cover();
-    
 }
 
 .menu__title{
@@ -15,158 +14,107 @@
 }
 
 .menu-acco{
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    height: 100%;
     display: flex;
-    cursor: pointer;
-    // justify-content: center;
-    // align-items: stretch;
-    
-}
+    flex-direction: row;
+    justify-content: flex-end;
+
+  }
 
 .menu-acco__item{
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
 
-    &_meat{
-        right: rem(160px);
-    }
-
-    &_vega{
-        right: rem(80px);
-    }
-
-    &_diet{
-        right: 0px;
-    }
-
-    &:hover{
-
-        cursor: pointer;
-            
-    }
-        
-
-    &.active{  
+      &.active{
         .menu-acco__title_dropdown{
             color: $yellow;
         }
 
-        .menu-acco__dropdown{
-              width: 60vw;
-    
-            @include tablets{
-                width: 75vw;
-            }
-           
-        }
-    
-    }
-}
+        .menu-acco__dropdown-text{
+           width: 60vw;
 
-.menu-acco__title-container{
+          @include tablets{
+            width: 65vw;
+          }
+
+          p{
+              opacity: 1;
+              visibility: visible;
+          }
+        }
+    }
+  }
+
+.menu-acco__dropdown-text {
+  @include ubuntu(light);
+  line-height: 24px;
+  background-color: rgba($darkgrey, 0.8);
+  width: 0;
+  transition: width 0.3s;
+
+  p {
+    padding: 55px 33px;
+    opacity: 0;
+    transition: opacity 0.1s 0.2s;
+    visibility: hidden;
+
+    @include smallphones {
+      line-height: 1.5;
+      padding: 10px 10px;
+
+    }
+  }
+}
+  .menu-acco__title-container {
     width: rem(80px);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-   
-      
-    
-    &_meat{
-        background-image: url("../img/bg/menu_meat.jpg");
-        @include cover();
+
+    &_meat {
+      background-image: url("../img/bg/menu_meat.jpg");
+      @include cover();
     }
 
-    &_vega{
-        background-image: url("../img/bg/menu_vega.jpg");
-        @include cover();
+    &_vega {
+      background-image: url("../img/bg/menu_vega.jpg");
+      @include cover();
     }
 
-    &_diet{
-        background-image: url("../img/bg/menu_diet.jpg");
-        @include cover();
+    &_diet {
+      background-image: url("../img/bg/menu_diet.jpg");
+      @include cover();
     }
 
-   
-    &:hover{
-        color: $yellow;
+    &:hover {
+      color: $yellow;
     }
 
-    @include tablets(){
-        align-items: flex-end;
+    @include tablets() {
+      align-items: flex-end;
     }
+  }
 
-}
-
-.menu-acco__title{
+  .menu-acco__title {
     @include gagalin();
     font-size: 40px;
     transform: rotate(-90deg);
     white-space: nowrap;
 
-    
-    @include tablets(){
-       transform: rotate(-90deg) translateX(60%);
+    @include tablets() {
+      transform: rotate(-90deg) translateX(60%);
     }
 
-    @include smallphones(){
-        font-size: 30px;
+    @include smallphones() {
+      font-size: 30px;
     }
-}
+  }
 
 
-.menu-acco__dropdown{
-    position: absolute;
-    width: 0;
-    overflow: hidden;
-    background-color: rgba($darkgrey, .93);
-    display: flex;
-    transition: width 1s;
-
-    &_meat{
-        right: 0px;
-        top: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-
-    &_vega{
-        right: 0px;
-        top: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-
-    &_diet{
-        right: 0px;
-        top: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-
-}
-
-.menu-acco__dropdown-text{
-    padding: 55px 33px;
-    @include ubuntu(light);
-    line-height: 24px;
-
-    & p{
-        width: 100%;
-    }
-  
-
-    @include smallphones{
-        line-height: 1.6;
-        padding: 10px 10px;
-        
-    }
-   
-}
 
 
