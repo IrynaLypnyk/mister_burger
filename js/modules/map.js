@@ -4,7 +4,7 @@ let map = (function () {
         let map = new google.maps.Map(document.getElementById('map'), {
             zoom: 13,
             //center: {lat: 50.4561854, lng: 30.5434603},
-            center: {lat: 50.4679387, lng: 30.5028748},
+            center: {lat: 50.4673036, lng: 30.5208456},
             scrollwheel: false,
             mapTypeControl: true,
             mapTypeControlOptions: {

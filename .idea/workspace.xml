@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796ef1a4-0284-45da-984c-489670b01f9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modules/overlay-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/overlay-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_arrow-scroll.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_arrow-scroll.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_dot-scroll.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_dot-scroll.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_hamburger-btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_hamburger-btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_slider-ingreds.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_slider-ingreds.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_best.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_best.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_burgers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_burgers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_promo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_setups/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_setups/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_setups/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_setups/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_setups/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_setups/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +16,7 @@
       <file leaf-file-name="_arrow-scroll.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_components/_arrow-scroll.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
+            <state relative-caret-position="672">
               <caret line="28" column="1" selection-end-line="28" selection-end-column="1" />
             </state>
           </provider>
@@ -50,17 +25,17 @@
       <file leaf-file-name="_burgers.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_sections/_burgers.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="6552">
               <caret line="273" selection-start-line="273" selection-end-line="273" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/modules/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="216">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -74,13 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slider.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/slider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
               <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="сheeseburger.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/content/burgers-slider/сheeseburger.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="сhiken.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/content/burgers-slider/сhiken.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -125,11 +110,11 @@
         <option value="$PROJECT_DIR$/scss/_components/_hamburger-btn.scss" />
         <option value="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" />
         <option value="$PROJECT_DIR$/scss/_components/_slider-ingreds.scss" />
-        <option value="$PROJECT_DIR$/js/modules/map.js" />
         <option value="$PROJECT_DIR$/js/modules/overlay-menu.js" />
         <option value="$PROJECT_DIR$/scss/_sections/_burgers.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/modules/slider.js" />
+        <option value="$PROJECT_DIR$/js/modules/map.js" />
       </list>
     </option>
   </component>
@@ -175,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,7 +229,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,11 +287,12 @@
       <workItem from="1536326408340" duration="12662000" />
       <workItem from="1536825057977" duration="6897000" />
       <workItem from="1536903603843" duration="34580000" />
+      <workItem from="1536941441564" duration="566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140781000" />
+    <option name="totallyTimeSpent" value="141347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,7 +307,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3292011" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -346,23 +332,23 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3292011" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3292011" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="2" weight="0.329927" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292011" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3292011" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,13 +363,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_setups/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -587,9 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_setups/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -694,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_components/_arrow-scroll.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
+        <state relative-caret-position="672">
           <caret line="28" column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
@@ -743,15 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sections/_burgers.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="6552">
           <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -766,6 +735,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/content/burgers-slider/сhiken.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/content/burgers-slider/сheeseburger.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
