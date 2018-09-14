@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 25%;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .nav__item {
@@ -30,7 +30,7 @@
   }
   .nav__link{
       @include ubuntu(regular);
-      font-size: 4vw;
+      font-size: 6vw;
     &:hover{
       color: #ccc;
     }

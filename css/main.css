@@ -1848,7 +1848,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 25%;
-    margin-right: 0px; }
+    margin-right: 0; }
   .header__nav.mobile .nav__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1863,7 +1863,7 @@ body {
   .header__nav.mobile .nav__link {
     font-family: 'Ubuntu', Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 4vw; }
+    font-size: 6vw; }
     .header__nav.mobile .nav__link:hover {
       color: #ccc; }
 
