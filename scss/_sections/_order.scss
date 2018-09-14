@@ -1,18 +1,18 @@
-.order{
-    background-image: url("../img/bg/orderbg.jpg");
-    @include cover();
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    // align-content: center;
+.order {
+  background-image: url("../img/bg/orderbg.jpg");
+  @include cover();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // align-content: center;
 }
 
-.order__title{
-    color: $yellow;
-    text-align: center;
+.order__title {
+  color: $yellow;
+  text-align: center;
 
-  @include smallphones{
+  @include smallphones {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 10px;
@@ -20,187 +20,180 @@
 
 }
 
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-.form__container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    @include tablets{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    @include phones{
-        justify-content: center;
-    }
+  @include phones {
+    justify-content: center;
+  }
 }
 
-.form__column{
-    width: 50%;
-    flex: 1;
+.form__column {
+  width: 50%;
+  flex: 1;
 
-    @include tablets{
-        width: 60%;
-    }
+  @include tablets {
+    width: 60%;
+  }
 
-    @include phones{
-        width: 95%;
-        margin-right: -10px;
-    }
- 
+  @include phones {
+    width: 95%;
+    margin-right: -10px;
+  }
+
 }
 
-.form__row{
-   display: flex;
-   width: 100%;
-   margin-bottom: 20px;
+.form__row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
 
-   @include phones{
+  @include phones {
     justify-content: center;
     margin-bottom: rem(20px);
+  }
+
+  &.form__row_textarea {
+    @include phones {
+      margin-bottom: rem(35px);
     }
+  }
 
-    &.form__row_textarea{
-        @include phones{
-         margin-bottom: rem(35px);
-        }
-   }
+  &.form__row_radio {
+    display: inline-block;
 
-   &.form__row_radio{
-       display: inline-block;
-
-       @include phones{
-        text-align: center;
-        margin-bottom: rem(35px);
-        }
+    @include phones {
+      text-align: center;
+      margin-bottom: rem(35px);
     }
+  }
 
-    &.form__row_checkbox{
-        @include tablets{
-         margin-bottom: rem(35px);
-        }
-   }
+  &.form__row_checkbox {
+    @include tablets {
+      margin-bottom: rem(35px);
+    }
+  }
 }
 
-.form__label-block{
-    width: 100%;
-    flex: 1;
-    margin-right: 20px;
+.form__label-block {
+  width: 100%;
+  flex: 1;
+  margin-right: 20px;
 
-    @include phones{
-        width: 95%;
-        margin-right: 10px;
-    }
+  @include phones {
+    width: 95%;
+    margin-right: 10px;
+  }
 }
 
-
-
-.form__label-text{
-    color: #fff;
-    margin-bottom: 7px;
+.form__label-text {
+  color: #fff;
+  margin-bottom: 7px;
 }
 
-.form__input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline-color: $yellow;
- }
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline-color: $yellow;
+}
 
-.form__input_textarea{
-    resize: none;
-    height: 115px;
+.form__input_textarea {
+  resize: none;
+  height: 115px;
 
-  @include smallphones{
+  @include smallphones {
     height: 60px;
   }
 
 }
 
 .form__label-block_radio,
-.form__label-block_checkbox{
-   display: inline-flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   cursor: pointer;
-   width: auto;
+.form__label-block_checkbox {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: auto;
 
+  .form__label-text {
+    margin-bottom: 0px;
+    display: inline-block;
+  }
 
-   .form__label-text{
-     margin-bottom: 0px;
-     display: inline-block;
-    }
+  @include phones {
+    justify-content: center;
+    text-align: center;
+  }
 
-    @include phones{
-        justify-content: center;
-        text-align: center;
-    }
-  
 }
 
-   .form__radio-fake{
-        background-color: #fff;
-        width: 15px;
-        height: 15px;
-        border: none;
-        border-radius: 50%;
-        margin-right: 10px;
-        position: relative;
-        // cursor: pointer;
-        
+.form__radio-fake {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  // cursor: pointer;
 
-        &:after{
-            content:"";
-            @include circle(7px, $red);
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            display: none;
-        }
-     }
+  &:after {
+    content: "";
+    @include circle(7px, $red);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: none;
+  }
+}
 
-     .form__radio-input:checked + .form__radio-fake:after{
-        display: inline-block;
-    }
+.form__radio-input:checked + .form__radio-fake:after {
+  display: inline-block;
+}
 
-    .form__checkbox-fake{
-        background-color: #fff;
-        width: 15px;
-        height: 15px;
-        border: none;
-        margin-right: 10px;
-        position: relative;
-        // cursor: pointer;  
-     
-        
-        &:after{
-            content: "\2714";
-            position: absolute;
-            height: 100%;
-            left: 2px;
-            bottom: 3px;
-            color: red;
-            font-weight: bold;
-            cursor: pointer;
-            display: none;
-        }
-    }
+.form__checkbox-fake {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin-right: 10px;
+  position: relative;
+  // cursor: pointer;
 
-.form__checkbox-input:checked + .form__checkbox-fake:after{
-        display: block;
-    }
+  &:after {
+    content: "\2714";
+    position: absolute;
+    height: 100%;
+    left: 2px;
+    bottom: 3px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+  }
+}
 
-    
+.form__checkbox-input:checked + .form__checkbox-fake:after {
+  display: block;
+}
+
 .form__row:nth-child(3) {
 
-    .form__label-block:nth-child(4){
-       
-        @include phones{
-            display: none;
-        }
+  .form__label-block:nth-child(4) {
+
+    @include phones {
+      display: none;
     }
+  }
 }
 
 

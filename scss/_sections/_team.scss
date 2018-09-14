@@ -1,198 +1,151 @@
-.team{
-    background-image: url("../img/bg/teambg.jpg");
-    @include cover();
-    position: relative;
+.team {
+  background-image: url("../img/bg/teambg.jpg");
+  @include cover();
+  position: relative;
 }
 
-.team__content{
-    position: absolute;
-    width: 50%;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba($darkgrey, .93);
-    display: flex;
-    align-items: center;
+.team__content {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba($darkgrey, .93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablets() {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.team__text {
+  width: 55%;
+
+  @include tablets {
+    width: 45%;
+  }
+
+  @include phones {
+    width: 70%;
+  }
+}
+
+.team__title {
+  color: $yellow;
+  margin-bottom: rem(80px);
+}
+
+.team-acco {
+  color: #fff;
+
+}
+
+.team-acco__item {
+  margin-bottom: 40px;
+
+  @include tablets() {
+    margin-bottom: 25px;
+  }
+
+  &.active,
+  &:hover {
+
+    cursor: pointer;
+
+    .team-acco__name {
+      color: $yellow;
+
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+
+  }
+  &.active {
+
+    .team-acco__dropdown {
+      height: 170px;
+
+    }
+
+  }
+}
+
+.team-acco__name {
+  @include gagalin();
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  white-space: nowrap;
+
+  @include tablets() {
     justify-content: center;
+  }
 
-    @include tablets(){
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.team__text{
-    width: 55%;
-
-    @include tablets{
-        width: 45%;
-    }
-
-    @include phones{
-        width: 70%;
-    }
-}
-.team__title{
-    color: $yellow;
-    margin-bottom: rem(80px);
-}
-
-.team-acco{
-    color: #fff;
-
-    
-}
-
-
-.team-acco__item{
-    margin-bottom: 40px;
-
-    @include tablets() {
-        margin-bottom: 25px;
-     }
-
-     
-
-    &.active, 
-    &:hover{
-
-        cursor: pointer;
-
-        .team-acco__name{
-            color: $yellow;
-            
-        
-            &:before{
-                transform: rotate(180deg);
-            }
-        }
-
-    }   
-    &.active{
-
-       .team-acco__dropdown{
-        height: 170px;
-      
-      
-        }
-     
-    }
-}
-
-.team-acco__name{
-    @include gagalin();
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; 
-    white-space: nowrap;
-
-    // &.active{
-    //     color: $yellow;
-
-    //     &:before{
-    //     transform: rotate(180deg);
-    //     }
-
-       
-        @include tablets() {
-            justify-content: center;
-        }
-
-   
-
-    &:before {
-        content: "";
-        width: 0;
-        height: 0;
-        border: 9px solid transparent;
-        border-top-color: $yellow;
-        border-bottom: none;
-        margin-right: 10px;
-       
-    }
-
-    @include tablets() {
-        font-size: 25px;
-    }
-}
-
-// .team-acco__name.active + .team-acco__dropdown{
-//    height: auto;
-//  }
-
-
-
-    // &.active{
-        
-    //             .team-acco__name{
-    //                 color: $yellow;
-                    
-                
-    //                 &:before{
-    //                     transform: rotate(180deg);
-    //                 }
-    //             }
-        
-    //             .team-acco__dropdown{
-    //                 height: 160px;
-        
-    //                 @include phones{
-    //                     height: 190px;
-    //                 }
-    //             }
-    //         }
-// }
-
-.team-acco__dropdown{
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    overflow: hidden;
+  &:before {
+    content: "";
+    width: 0;
     height: 0;
-    transition: height 0.4s;
-    
-    
-   
-    @include tablets() {
-       flex-direction: column;
-    }
-}
-.team-acco__avatar{
-    padding: 0px 25px;
-    
-   
+    border: 9px solid transparent;
+    border-top-color: $yellow;
+    border-bottom: none;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+  }
 
-    @include tablets() {
-       margin-bottom: 15px;
-     }
+  @include tablets() {
+    font-size: 25px;
+  }
 }
 
-.team-acco__avatar-pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    
+.team-acco__dropdown {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s;
+
+  @include tablets() {
+    flex-direction: column;
+  }
 }
 
-.team-acco__avatar-img{
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+.team-acco__avatar {
+  padding: 0px 25px;
 
-.team-acco__post{
+  @include tablets() {
     margin-bottom: 15px;
-    @include ubuntu(bold);
+  }
 }
 
-.team-acco__desc{
-    @include ubuntu(light);
-    
-    
-      
+.team-acco__avatar-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.team-acco__avatar-img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-acco__post {
+  margin-bottom: 15px;
+  @include ubuntu(bold);
+}
+
+.team-acco__desc {
+  @include ubuntu(light);
+
 }

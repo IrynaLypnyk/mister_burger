@@ -1,5 +1,5 @@
-let map = (function(){
-    let init = function(){
+let map = (function () {
+    let init = function () {
 
         let map = new google.maps.Map(document.getElementById('map'), {
             zoom: 13,
@@ -45,7 +45,7 @@ let map = (function(){
                 {
                     'featureType': 'road',
                     'elementType': 'all',
-                    'stylers': [{'saturation': -100},{'lightness': 45}],
+                    'stylers': [{'saturation': -100}, {'lightness': 45}],
                 },
                 {
                     'featureType': 'road.highway',
@@ -65,7 +65,7 @@ let map = (function(){
                 {
                     'featureType': 'water',
                     'elementType': 'all',
-                    'stylers': [{'color': '#f9b43b'},{'visibility': 'on'}],
+                    'stylers': [{'color': '#f9b43b'}, {'visibility': 'on'}],
                 },
             ],
         });
@@ -97,7 +97,7 @@ let map = (function(){
                 content: 'г. Киев, пр-т Генерала Ватутина, 2т'
             }
         ];
-        places.forEach(function(place) {
+        places.forEach(function (place) {
             var marker = new google.maps.Marker({
                 position: place.position,
                 icon: markerpic,
@@ -105,18 +105,18 @@ let map = (function(){
                 title: place.contentString,
                 animation: google.maps.Animation.DROP,
             });
-            marker.addListener('mouseover', function() {
-               // infoWindow.setContent(place.content);
+            marker.addListener('mouseover', function () {
+                // infoWindow.setContent(place.content);
                 //infoWindow.open(map, marker);
                 marker.setAnimation(google.maps.Animation.BOUNCE);
-                setTimeout(function() {
+                setTimeout(function () {
                     marker.setAnimation(null);
                 }, 2100);
             });
         });
     };
 
-    return{
+    return {
         init: init
     }
 })();

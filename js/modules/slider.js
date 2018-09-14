@@ -95,8 +95,4 @@ var slider = (function() {
         }
     };
 })();
-$(function() {
-    if ($(".slider").length) {
-        slider.init();
-    }
-});
+

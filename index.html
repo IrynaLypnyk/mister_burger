@@ -123,143 +123,505 @@
 			<!-- ==== SCREEN 3 - BURGERS ==== -->
 			<section class="section burgers">
 				<div class="slider">
-					<div class="arrow-scroll  arrow-scroll_left">
-						<a href="#" class="arrow-scroll__link">
-							<svg class="arrow-scroll__icon">
-								<use xlink:href="img/icons/sprite.svg#arrow-scroll"></use>
-							</svg>
-						</a>
-					</div>
 					<div class="slider__content">
-						<!-- slider__img-block -->
-						<div class="slider__img-block">
-							<div class="slider__ingreds">
-								<div class="ingreds__btn">
-									<svg class="ingreds__icon">
-										<use xlink:href="img/icons/sprite.svg#burger"></use>
-									</svg>
-									<div class="ingreds__text">Состав</div>
-								</div>
-								<div class="ingreds__dropdown">
-									<table class="ingreds__table">
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_beef">
-													<use xlink:href="img/icons/sprite.svg#beef"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Говядина
-											</td>
-											<td class="ingreds__product-weigh">
-												300г
-											</td>
-										</tr>
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_buns">
-													<use xlink:href="img/icons/sprite.svg#buns"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Булочки
-											</td>
-											<td class="ingreds__product-weigh">
-												100г
-											</td>
-										</tr>
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_salad">
-													<use xlink:href="img/icons/sprite.svg#salad"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Зелень
-											</td>
-											<td class="ingreds__product-weigh">
-												70г
-											</td>
-										</tr>
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_sauce">
-													<use xlink:href="img/icons/sprite.svg#sauce"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Соус
-											</td>
-											<td class="ingreds__product-weigh">
-												150г
-											</td>
-										</tr>
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_cucmber">
-													<use xlink:href="img/icons/sprite.svg#cucumber"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Овощи
-											</td>
-											<td class="ingreds__product-weigh">
-												200г
-											</td>
-										</tr>
-										<tr class="ingreds-table-row">
-											<td class="ingreds__product-pic">
-												<svg class="ingreds_product-icon ingreds_product-icon_cheese">
-													<use xlink:href="img/icons/sprite.svg#cheese"></use>
-												</svg>
-											</td>
-											<td class="ingreds__product-name">
-												Сыр
-											</td>
-											<td class="ingreds__product-weigh">
-												80г
-											</td>
-										</tr>
-									</table>
-								</div>
-							</div>	
-							<div class="slider__img-container">
-								<img src="img/decor/darkburger.png" alt="  beef burger" class="slider__img">
-							</div>
-							<div class="slider__kkal">
-								<svg class="kkal__icon">
-									<use xlink:href="img/icons/sprite.svg#kkal"></use>
-								</svg>
-								<div class="kkal__numbers">1200</div>
-								<div class="kkal__text">ккал</div>
-							</div>
-						</div>
-						<!-- slider__text-block -->
-						<div class="slider__text-block">
-							<h2 class="section__title burgers__title">Dark BEEF Burger</h2>
-							<div class="slider__description">
-								<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
-								помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
-							</div>
-							<div class="slider__price-and-order">
-								<div class="slider__price">
-								 	<span class="slider__price-numbers">50</span>
-									<span class="slider__price-currency">гривен</span>
-								</div>
-								<div class="btn">
-									<a href="#" class="btn-link btn-link_order" data-scroll-to="6">Заказать</a>
-								</div>
-							</div>
-						</div>
+            <ul class="slider__list">
+              <li class="slider__item active">
+                <!-- slider__img-block -->
+                <div class="slider__img-block">
+                  <div class="slider__ingreds">
+                    <div class="ingreds__btn">
+                      <svg class="ingreds__icon">
+                        <use xlink:href="img/icons/sprite.svg#burger"></use>
+                      </svg>
+                      <div class="ingreds__text">Состав</div>
+                    </div>
+                    <div class="ingreds__dropdown">
+                      <table class="ingreds__table">
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_beef">
+                              <use xlink:href="img/icons/sprite.svg#beef"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Говядина
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            300г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_buns">
+                              <use xlink:href="img/icons/sprite.svg#buns"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Булочки
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            100г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_salad">
+                              <use xlink:href="img/icons/sprite.svg#salad"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Зелень
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            70г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_sauce">
+                              <use xlink:href="img/icons/sprite.svg#sauce"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Соус
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            150г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cucmber">
+                              <use xlink:href="img/icons/sprite.svg#cucumber"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Овощи
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            200г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cheese">
+                              <use xlink:href="img/icons/sprite.svg#cheese"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Сыр
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            80г
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slider__img-container">
+                    <img src="img/content/burgers-slider/darkburger.png" alt="  beef burger" class="slider__img">
+                  </div>
+                  <div class="slider__kkal">
+                    <svg class="kkal__icon">
+                      <use xlink:href="img/icons/sprite.svg#kkal"></use>
+                    </svg>
+                    <div class="kkal__numbers">1200</div>
+                    <div class="kkal__text">ккал</div>
+                  </div>
+                </div>
+                <!-- slider__text-block -->
+                <div class="slider__text-block">
+                  <h2 class="section__title burgers__title">Dark BEEF Burger</h2>
+                  <div class="slider__description">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  </div>
+                  <div class="slider__price-and-order">
+                    <div class="slider__price">
+                      <span class="slider__price-numbers">50</span>
+                      <span class="slider__price-currency">гривен</span>
+                    </div>
+                    <div class="btn">
+                      <a href="#" class="btn-link btn-link_order" data-scroll-to="6">Заказать</a>
+                    </div>
+                  </div>
+                </div></li>
+              <li class="slider__item"><!-- slider__img-block -->
+                <div class="slider__img-block">
+                  <div class="slider__ingreds">
+                    <div class="ingreds__btn">
+                      <svg class="ingreds__icon">
+                        <use xlink:href="img/icons/sprite.svg#burger"></use>
+                      </svg>
+                      <div class="ingreds__text">Состав</div>
+                    </div>
+                    <div class="ingreds__dropdown">
+                      <table class="ingreds__table">
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_beef">
+                              <use xlink:href="img/icons/sprite.svg#beef"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Говядина
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            300г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_buns">
+                              <use xlink:href="img/icons/sprite.svg#buns"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Булочки
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            100г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_salad">
+                              <use xlink:href="img/icons/sprite.svg#salad"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Зелень
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            70г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_sauce">
+                              <use xlink:href="img/icons/sprite.svg#sauce"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Соус
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            150г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cucmber">
+                              <use xlink:href="img/icons/sprite.svg#cucumber"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Овощи
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            200г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cheese">
+                              <use xlink:href="img/icons/sprite.svg#cheese"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Сыр
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            80г
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slider__img-container">
+                    <img src="img/content/burgers-slider/сheeseburger.png" alt="  beef burger" class="slider__img">
+                  </div>
+                  <div class="slider__kkal">
+                    <svg class="kkal__icon">
+                      <use xlink:href="img/icons/sprite.svg#kkal"></use>
+                    </svg>
+                    <div class="kkal__numbers">1200</div>
+                    <div class="kkal__text">ккал</div>
+                  </div>
+                </div>
+                <!-- slider__text-block -->
+                <div class="slider__text-block">
+                  <h2 class="section__title burgers__title">Cheese burger</h2>
+                  <div class="slider__description">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  </div>
+                  <div class="slider__price-and-order">
+                    <div class="slider__price">
+                      <span class="slider__price-numbers">50</span>
+                      <span class="slider__price-currency">гривен</span>
+                    </div>
+                    <div class="btn">
+                      <a href="#" class="btn-link btn-link_order" data-scroll-to="6">Заказать</a>
+                    </div>
+                  </div>
+                </div></li>
+              <li class="slider__item"><!-- slider__img-block -->
+                <div class="slider__img-block">
+                  <div class="slider__ingreds">
+                    <div class="ingreds__btn">
+                      <svg class="ingreds__icon">
+                        <use xlink:href="img/icons/sprite.svg#burger"></use>
+                      </svg>
+                      <div class="ingreds__text">Состав</div>
+                    </div>
+                    <div class="ingreds__dropdown">
+                      <table class="ingreds__table">
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_beef">
+                              <use xlink:href="img/icons/sprite.svg#beef"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Говядина
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            300г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_buns">
+                              <use xlink:href="img/icons/sprite.svg#buns"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Булочки
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            100г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_salad">
+                              <use xlink:href="img/icons/sprite.svg#salad"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Зелень
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            70г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_sauce">
+                              <use xlink:href="img/icons/sprite.svg#sauce"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Соус
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            150г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cucmber">
+                              <use xlink:href="img/icons/sprite.svg#cucumber"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Овощи
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            200г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cheese">
+                              <use xlink:href="img/icons/sprite.svg#cheese"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Сыр
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            80г
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slider__img-container">
+                    <img src="img/content/burgers-slider/spicyshrimp.png" alt="  beef burger" class="slider__img">
+                  </div>
+                  <div class="slider__kkal">
+                    <svg class="kkal__icon">
+                      <use xlink:href="img/icons/sprite.svg#kkal"></use>
+                    </svg>
+                    <div class="kkal__numbers">1200</div>
+                    <div class="kkal__text">ккал</div>
+                  </div>
+                </div>
+                <!-- slider__text-block -->
+                <div class="slider__text-block">
+                  <h2 class="section__title burgers__title">Spicyshrimp Burger</h2>
+                  <div class="slider__description">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  </div>
+                  <div class="slider__price-and-order">
+                    <div class="slider__price">
+                      <span class="slider__price-numbers">50</span>
+                      <span class="slider__price-currency">гривен</span>
+                    </div>
+                    <div class="btn">
+                      <a href="#" class="btn-link btn-link_order" data-scroll-to="6">Заказать</a>
+                    </div>
+                  </div>
+                </div></li>
+              <li class="slider__item"><!-- slider__img-block -->
+                <div class="slider__img-block">
+                  <div class="slider__ingreds">
+                    <div class="ingreds__btn">
+                      <svg class="ingreds__icon">
+                        <use xlink:href="img/icons/sprite.svg#burger"></use>
+                      </svg>
+                      <div class="ingreds__text">Состав</div>
+                    </div>
+                    <div class="ingreds__dropdown">
+                      <table class="ingreds__table">
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_beef">
+                              <use xlink:href="img/icons/sprite.svg#beef"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Говядина
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            300г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_buns">
+                              <use xlink:href="img/icons/sprite.svg#buns"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Булочки
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            100г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_salad">
+                              <use xlink:href="img/icons/sprite.svg#salad"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Зелень
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            70г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_sauce">
+                              <use xlink:href="img/icons/sprite.svg#sauce"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Соус
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            150г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cucmber">
+                              <use xlink:href="img/icons/sprite.svg#cucumber"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Овощи
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            200г
+                          </td>
+                        </tr>
+                        <tr class="ingreds-table-row">
+                          <td class="ingreds__product-pic">
+                            <svg class="ingreds_product-icon ingreds_product-icon_cheese">
+                              <use xlink:href="img/icons/sprite.svg#cheese"></use>
+                            </svg>
+                          </td>
+                          <td class="ingreds__product-name">
+                            Сыр
+                          </td>
+                          <td class="ingreds__product-weigh">
+                            80г
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slider__img-container">
+                    <img src="img/content/burgers-slider/сhiken.png" alt="  beef burger" class="slider__img">
+                  </div>
+                  <div class="slider__kkal">
+                    <svg class="kkal__icon">
+                      <use xlink:href="img/icons/sprite.svg#kkal"></use>
+                    </svg>
+                    <div class="kkal__numbers">1200</div>
+                    <div class="kkal__text">ккал</div>
+                  </div>
+                </div>
+                <!-- slider__text-block -->
+                <div class="slider__text-block">
+                  <h2 class="section__title burgers__title">Chicken Burger</h2>
+                  <div class="slider__description">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  </div>
+                  <div class="slider__price-and-order">
+                    <div class="slider__price">
+                      <span class="slider__price-numbers">50</span>
+                      <span class="slider__price-currency">гривен</span>
+                    </div>
+                    <div class="btn">
+                      <a href="#" class="btn-link btn-link_order" data-scroll-to="6">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
 					</div>
-					<div class="arrow-scroll arrow-scroll_right">
-							<a href="#" class="arrow-scroll__link">
-								<svg class="arrow-scroll__icon">
-									<use xlink:href="img/icons/sprite.svg#arrow-scroll"></use>
-								</svg>
-							</a>
-					</div>
-				</div>
+          <div class="slider__controls">
+            <a href="" class="slider__controls-btn slider__controls-btn_prev">
+              <svg class="arrow-scroll__icon">
+                <use xlink:href="img/icons/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
+            <a href="" class="slider__controls-btn slider__controls-btn_next">
+              <svg class="arrow-scroll__icon">
+                <use xlink:href="img/icons/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
 			</section>
 			<!-- ==== SCREEN 4 - TEAM ==== -->
 			<section class="section team">
@@ -375,7 +737,7 @@
 			<!-- ==== SCREEN 6 - REVIEWS ==== -->
 			<section class="section reviews">
 				<ul class="reviews__list">
-					<li class="reviews__item" style="background-image: url('img/content/review_01.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_01.jpg')">
 						<div class="reviews__item_hover" hidden>
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -387,7 +749,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_02.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_02.jpg')">
 						<div class="reviews__item_hover" hidden>
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -399,7 +761,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_03.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_03.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -413,7 +775,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_04.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_04.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -427,7 +789,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_05.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_05.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -441,7 +803,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_06.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_06.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -455,7 +817,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_07.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_07.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -469,7 +831,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="reviews__item" style="background-image: url('img/content/review_08.jpg')">
+					<li class="reviews__item" style="background-image: url('img/content/review/review_08.jpg')">
 						<div class="reviews__item_hover">
 							<div class="reviews__text-block">
 								<div class="reviews__author">Константин Спилберг</div>
@@ -646,9 +1008,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 	<!-- <script src="./js/jquery.fullpage.min.js"></script> -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa3Dwo3IxCqa3Z-_ZZpCGbElFEMKxfKcg" type="text/javascript"></script>
-	<script src="js/modules/map.js"></script>
 	<script src="js/modules/overlay-menu.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/modules/slider.js"></script>
+  <script src="js/modules/map.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

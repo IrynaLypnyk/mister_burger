@@ -28,12 +28,12 @@
       margin: 4vh 0;
     }
   }
-  .nav__link{
-      @include ubuntu(regular);
-      font-size: 6vw;
-    &:hover{
+  .nav__link {
+    @include ubuntu(regular);
+    font-size: 6vw;
+    &:hover {
       color: #ccc;
     }
-    }
+  }
 }
 

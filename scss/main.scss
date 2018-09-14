@@ -4,7 +4,6 @@ $yellow: #f9b43b;
 $red: #e45028;
 $green: #95c550;
 
-
 // resolutions
 $desktops: 1200px;
 $laptops: 992px;
@@ -24,7 +23,6 @@ $smallphones: 360px;
 @import "_setups/_base";
 @import "_setups/_layout";
 
-
 //sections
 @import "_sections/_promo";
 @import "_sections/_best";
@@ -34,7 +32,6 @@ $smallphones: 360px;
 @import "_sections/_reviews";
 @import "_sections/_order";
 @import "_sections/_contacts";
-
 
 //components
 @import "_components/hamburger-btn";

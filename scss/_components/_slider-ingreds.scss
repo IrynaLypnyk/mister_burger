@@ -1,114 +1,111 @@
-.slider__ingreds{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-start;
+.slider__ingreds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
 
-    &:hover{
-        .ingreds__dropdown{
-            display: block;
-            opacity: 100%;
-        }
+  &:hover {
+    .ingreds__dropdown {
+      display: block;
+      opacity: 100%;
     }
+  }
 }
 
+.ingreds__btn {
+  width: 91px;
+  height: 91px;
+  background-color: rgba(#e35028, 0.4);
+  border-radius: 5px;
+  padding: 12px 20px;
+  @include flex-center;
+  flex-direction: column;
+  transition: 0.5s;
 
-.ingreds__btn{
-    width: 91px;
-    height: 91px;
-    background-color: rgba(#e35028, 0.4);
-    border-radius: 5px;
-    padding: 12px 20px;
-    @include flex-center;
-    flex-direction: column;
-    transition: 0.5s;
+  &:hover {
+    background-color: #e35028;
+    cursor: pointer;
 
-    &:hover{
-        background-color: #e35028;
-        cursor: pointer;
+    // .ingreds__dropdown{
+    //     display: block;
 
-        // .ingreds__dropdown{
-        //     display: block;
-            
-        // }
-    }
+    // }
+  }
 
-    @include phones{
-        width: 81px;
-        height: 81px;
-    }
-    
+  @include phones {
+    width: 81px;
+    height: 81px;
+  }
 
 }
 
-.ingreds__icon{
-    width: 100%;
-    height: 100%;
-    fill: #fff;
-    margin-bottom: 5px;
+.ingreds__icon {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+  margin-bottom: 5px;
 }
 
-.ingreds__text{
-    text-transform: uppercase;
-    @include gagalin();
+.ingreds__text {
+  text-transform: uppercase;
+  @include gagalin();
 }
 
-.ingreds__dropdown{
-    width: 272px;
-    background-color: rgba(#fff, 0.9);
-    border-radius: 5px;
-    padding: 14px 20px;
-    display: none;
-   
+.ingreds__dropdown {
+  width: 272px;
+  background-color: rgba(#fff, 0.9);
+  border-radius: 5px;
+  padding: 14px 20px;
+  display: none;
 
-    @include phones(){
-        width: 375px;
-        padding-right: 130px;
-    }
+  @include phones() {
+    width: 375px;
+    padding-right: 130px;
+  }
 }
 
-.ingreds__table{
-   width: 100%;
+.ingreds__table {
+  width: 100%;
 }
 
-.ingreds__product-pic{
-    width: 25%;
-    height: 50px;
-    text-align: left;
+.ingreds__product-pic {
+  width: 25%;
+  height: 50px;
+  text-align: left;
 }
 
-.ingreds_product-icon{
-    width: (45px);
-    height: 100%;
+.ingreds_product-icon {
+  width: (45px);
+  height: 100%;
 
-    &_beef,
-    &_sauce{
-        fill: $red;
-    }
+  &_beef,
+  &_sauce {
+    fill: $red;
+  }
 
-    &_buns,
-    &_cheese{
-        fill: $yellow;
-    }
+  &_buns,
+  &_cheese {
+    fill: $yellow;
+  }
 
-    &_salad,
-    &_cucmber{
-        fill: $green;
-    }
-    
+  &_salad,
+  &_cucmber {
+    fill: $green;
+  }
+
 }
 
-.ingreds__product-name{
-    width: 50%;
-    text-align: left;
-    @include ubuntu(medium);
-    color: $darkgrey;
+.ingreds__product-name {
+  width: 50%;
+  text-align: left;
+  @include ubuntu(medium);
+  color: $darkgrey;
 }
 
-.ingreds__product-weigh{
-    width: 25%;
-    text-align: right;
-    @include ubuntu(light);
-    color: $darkgrey;
+.ingreds__product-weigh {
+  width: 25%;
+  text-align: right;
+  @include ubuntu(light);
+  color: $darkgrey;
 }

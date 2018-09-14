@@ -19,36 +19,35 @@ body {
 
 }
 
-  
 .maincontent {
-    height: 100%;
-    transition: transform 1s;
-    will-change: transform; //transform: translateZ(0); для старых браузеров
-   
-   }
-  
-  .section {
-    background-color: $darkgrey;
-    //min-height: 650px;
-    // height: 100vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-   }
-  
-  .container {
-    width: 95%;
-    max-width: 940px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform; //transform: translateZ(0); для старых браузеров
+
+}
+
+.section {
+  background-color: $darkgrey;
+  //min-height: 650px;
+  // height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 95%;
+  max-width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
     

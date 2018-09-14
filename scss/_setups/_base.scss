@@ -1,6 +1,6 @@
 html {
   font-size: 2.2vmin;
-  
+
   // @include tablets {
   //   font-size: rem(15px);
   // }
@@ -9,7 +9,6 @@ html {
   //   font-size: rem(13px);
   // }
 }
-
 
 // tag styles reset
 h1,
@@ -51,20 +50,19 @@ footer {
 
 // common styles
 
-
-.section__title{
+.section__title {
   @include gagalin();
   font-size: 72px;
   font-weight: 300;
 
-    @include phones{
-      font-size: 50px;
-      line-height: 50px;
-    }
+  @include phones {
+    font-size: 50px;
+    line-height: 50px;
+  }
 
-    @include smallphones(){
-      margin-bottom: rem(70px);
-      }
+  @include smallphones() {
+    margin-bottom: rem(70px);
+  }
 
 }
 

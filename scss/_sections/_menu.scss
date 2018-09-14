@@ -1,52 +1,52 @@
-.menu{
-    background-image: url("../img/bg/menubg.jpg");
-    @include cover();
+.menu {
+  background-image: url("../img/bg/menubg.jpg");
+  @include cover();
 }
 
-.menu__title{
-    position: absolute;
-    top: rem(113px);
-    left: rem(93px);
+.menu__title {
+  position: absolute;
+  top: rem(113px);
+  left: rem(93px);
 
-    @include tablets(){
-        left: rem(20px);
-    }
-}
-
-.menu-acco{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
+  @include tablets() {
+    left: rem(20px);
   }
+}
 
-.menu-acco__item{
+.menu-acco {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.menu-acco__item {
   height: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
   cursor: pointer;
 
-      &.active{
-        .menu-acco__title_dropdown{
-            color: $yellow;
-        }
+  &.active {
+    .menu-acco__title_dropdown {
+      color: $yellow;
+    }
 
-        .menu-acco__dropdown-text{
-           width: 60vw;
+    .menu-acco__dropdown-text {
+      width: 60vw;
 
-          @include tablets{
-            width: 65vw;
-          }
+      @include tablets {
+        width: 65vw;
+      }
 
-          p{
-              opacity: 1;
-              visibility: visible;
-          }
-        }
+      p {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
+}
 
 .menu-acco__dropdown-text {
   @include ubuntu(light);
@@ -68,52 +68,53 @@
     }
   }
 }
-  .menu-acco__title-container {
-    width: rem(80px);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 
-    &_meat {
-      background-image: url("../img/bg/menu_meat.jpg");
-      @include cover();
-    }
+.menu-acco__title-container {
+  width: rem(80px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-    &_vega {
-      background-image: url("../img/bg/menu_vega.jpg");
-      @include cover();
-    }
-
-    &_diet {
-      background-image: url("../img/bg/menu_diet.jpg");
-      @include cover();
-    }
-
-    &:hover {
-      color: $yellow;
-    }
-
-    @include tablets() {
-      align-items: flex-end;
-    }
+  &_meat {
+    background-image: url("../img/bg/menu_meat.jpg");
+    @include cover();
   }
 
-  .menu-acco__title {
-    @include gagalin();
-    font-size: 40px;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-
-    @include tablets() {
-      transform: rotate(-90deg) translateX(60%);
-    }
-
-    @include smallphones() {
-      font-size: 30px;
-    }
+  &_vega {
+    background-image: url("../img/bg/menu_vega.jpg");
+    @include cover();
   }
+
+  &_diet {
+    background-image: url("../img/bg/menu_diet.jpg");
+    @include cover();
+  }
+
+  &:hover {
+    color: $yellow;
+  }
+
+  @include tablets() {
+    align-items: flex-end;
+  }
+}
+
+.menu-acco__title {
+  @include gagalin();
+  font-size: 40px;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+
+  @include tablets() {
+    transform: rotate(-90deg) translateX(60%);
+  }
+
+  @include smallphones() {
+    font-size: 30px;
+  }
+}
 
 
 

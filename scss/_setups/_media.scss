@@ -1,21 +1,21 @@
 @function rem($px) {
-    @return $px / 16px + 0rem;
-  }
-  
-  @mixin tablets {
-    @media screen and (max-width: $tablets) {
-      @content;
-    }
-  }
-  
-  @mixin phones {
-    @media screen and (max-width: $phones) {
-      @content;
-    }
-  }
+  @return $px / 16px + 0rem;
+}
 
-  @mixin smallphones {
-    @media screen and (max-width: $smallphones) {
-      @content;
-    }
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
   }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin smallphones {
+  @media screen and (max-width: $smallphones) {
+    @content;
+  }
+}
