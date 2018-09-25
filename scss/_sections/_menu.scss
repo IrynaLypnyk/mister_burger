@@ -1,3 +1,4 @@
+
 .menu {
   background-image: url("../img/bg/menubg.jpg");
   @include cover();
@@ -28,43 +29,23 @@
   position: relative;
   cursor: pointer;
 
-  &.active {
-    .menu-acco__title_dropdown {
-      color: $yellow;
-    }
-
-    .menu-acco__dropdown-text {
-      width: 60vw;
-
-      @include tablets {
-        width: 65vw;
-      }
-
-      p {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
 }
-
 .menu-acco__dropdown-text {
   @include ubuntu(light);
   line-height: 24px;
   background-color: rgba($darkgrey, 0.8);
   width: 0;
-  transition: width 0.3s;
 
   p {
     padding: 55px 33px;
-    opacity: 0;
-    transition: opacity 0.1s 0.2s;
-    visibility: hidden;
+    width: 60vw;
+    text-align: justify;
+
 
     @include smallphones {
       line-height: 1.5;
       padding: 10px 10px;
-
+      font-size: 12px;
     }
   }
 }
@@ -115,7 +96,5 @@
     font-size: 30px;
   }
 }
-
-
 
 

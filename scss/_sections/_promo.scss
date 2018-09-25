@@ -30,10 +30,15 @@
 // header__nav
 .header__nav {
   z-index: 1;
+  //transition-duration: 0.3s;
   transition-duration: 0.3s;
 
   @include tablets() {
-    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
   }
 }
 
@@ -43,7 +48,7 @@
   margin-right: 15px;
 
   @include tablets() {
-    display: none;
+    flex-direction: column;
   }
 
 }
@@ -52,10 +57,20 @@
   display: flex;
   align-items: center;
 
+  @include tablets() {
+    flex-direction: column;
+    //opacity: 0;
+  }
+
   &:not(:last-child):after {
     content: '';
     @include circle(4px, #fff);
     margin: 0 14px;
+
+  @include tablets() {
+    margin: 3vh 0;
+
+  }
   }
 }
 
@@ -68,6 +83,19 @@
 
   &:hover {
     text-decoration: underline;
+    opacity: 1;
+    //@include tablets(){
+    //  text-decoration: none;
+    //  color: #ccc;
+    //  font-weight: bold;
+    //}
+   }
+
+  @include tablets() {
+    @include ubuntu(regular);
+    font-size: 16px;
+
+
   }
 
 }

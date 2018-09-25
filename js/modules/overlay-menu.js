@@ -3,11 +3,25 @@ let overlaymenu = (function () {
         $("#hamburger-btn").on('click', function () {
             var elem = $('#hamburger-btn'),
                 menu = $('.header__nav'),
-                body = $('body');
+                body = $('body'),
+                overlay = $("#mobile-menu__overlay");
+
             elem.toggleClass('opened');
             menu.toggleClass('mobile');
-            body.css('overflow', 'hidden');
+            overlay.toggleClass('opened');
+            // body.css('overflow', 'hidden');
 
+        });
+        $("#mobile-menu__overlay").on('click', function () {
+            var elem = $('#hamburger-btn'),
+                menu = $('.header__nav'),
+                body = $('body'),
+                overlay = $("#mobile-menu__overlay");
+
+            elem.toggleClass('opened');
+            menu.toggleClass('mobile');
+            overlay.toggleClass('opened');
+            // body.css('overflow', 'hidden');
         });
     };
 

@@ -119,9 +119,9 @@ $('.team-acco__item').on('click', function () {
 
 //=============== M E N U - A C C O R D I O N ====================
 
-$('.menu-acco__item').on('click', function () {
-    $(this).toggleClass('active').siblings().removeClass('active');
-});
+// $('.menu-acco__item').on('click', function () {
+//     $(this).toggleClass('active').siblings().removeClass('active');
+// });
 
 $('menu-acco__title').on('tap', function () {
     $(this).css('color', '$yellow');
