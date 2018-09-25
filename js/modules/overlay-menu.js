@@ -9,7 +9,7 @@ let overlaymenu = (function () {
             elem.toggleClass('opened');
             menu.toggleClass('mobile');
             overlay.toggleClass('opened');
-            // body.css('overflow', 'hidden');
+            body.css('height', '100vh');
 
         });
         $("#mobile-menu__overlay").on('click', function () {

@@ -488,7 +488,7 @@ body {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   color: #fff;
-  overflow: hidden; }
+  overflow-y: hidden; }
 
 .wrapper {
   position: relative;
@@ -1378,7 +1378,7 @@ body {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   line-height: 24px;
-  background-color: rgba(47, 50, 52, 0.8);
+  background-color: rgba(47, 50, 52, 0.9);
   width: 0; }
   .menu-acco__dropdown-text p {
     padding: 55px 33px;
@@ -1928,7 +1928,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  bottom: 0;
+  bottom: -100%;
   right: 0;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
