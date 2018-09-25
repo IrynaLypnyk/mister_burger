@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796ef1a4-0284-45da-984c-489670b01f9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modules/overlay-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/overlay-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sections/_promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sections/_promo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_setups/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_setups/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modules/menu-accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/menu-accordion.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_sections/_menu.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu-accordion.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/modules/menu-accordion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -154,13 +157,13 @@
         <option value="$PROJECT_DIR$/js/modules/slider.js" />
         <option value="$PROJECT_DIR$/js/modules/map.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/modules/menu-accordion.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/_sections/_promo.scss" />
         <option value="$PROJECT_DIR$/scss/_components/_overlay-menu.scss" />
         <option value="$PROJECT_DIR$/js/modules/overlay-menu.js" />
         <option value="$PROJECT_DIR$/scss/_setups/_layout.scss" />
         <option value="$PROJECT_DIR$/scss/_sections/_menu.scss" />
+        <option value="$PROJECT_DIR$/js/modules/menu-accordion.js" />
       </list>
     </option>
   </component>
@@ -314,12 +317,12 @@
       <workItem from="1536941441564" duration="6050000" />
       <workItem from="1537353344229" duration="1466000" />
       <workItem from="1537767440648" duration="1886000" />
-      <workItem from="1537854661956" duration="15065000" />
+      <workItem from="1537854661956" duration="16110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165248000" />
+    <option name="totallyTimeSpent" value="166293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -708,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/menu-accordion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sections/_promo.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -783,6 +779,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/menu-accordion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -20,5 +20,13 @@ $(function(){
             item.removeClass("active");
         }
 
-    })
+    });
+        $(".menu-acco__dropdown-text").on("click", function(){
+            var $this = $(this),
+            item = $this.closest(".menu-acco__item"),
+                duration = 200;
+
+            $this.stop(true, true).animate({width:"0"},duration);
+            item.removeClass("active");
+        })
 });
