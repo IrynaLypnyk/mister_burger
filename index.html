@@ -61,7 +61,7 @@
 							</div>
 						</div>
 						<div class="arrow-scroll arrow-scroll_down">
-							<a class="arrow-scroll__link" href="" data-scroll-to="2">Вниз
+							<a class="arrow-scroll__link" href="#best" data-scroll-to="1">Вниз
 								<svg class="arrow-scroll__icon">
 									<use xlink:href="img/icons/sprite.svg#arrow-scroll"></use>
 								</svg>
@@ -73,7 +73,7 @@
 			</section>
 			<!-- ==== SCREEN 2 - BEST ==== -->
 
-			<section class="section best">
+			<section class="section best" id="best">
 				<div class="container best__container">
 					<h2 class="section__title best__title">Мы лучшие</h2>
 					<ul class="features">
@@ -896,7 +896,7 @@
 								<div class="form__row form__row_textarea">
 									<label class="form__label-block">
 										<div class="form__label-text">
-											Комментарий		
+											Комментарий
 										</div>
 										<textarea class="form__input form__input_textarea"></textarea>
 									</label>
@@ -927,7 +927,7 @@
 										Заказать
 									</button>
 									<button type="reset" class="btn btn-reset" value="Очистить">Очистить
-										
+
 									</button>
 								</div>
 							</div>
@@ -937,7 +937,7 @@
 			</section>
 			<!-- ==== SCREEN 8 - CONTACTS ==== -->
 			<section class="section contacts">
-				<div id="map"></div>
+				<div id="map" data-map-id="e51272737b23a768de0a7503"></div>
 				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780189444!2d30.25251203405525!3d50.40169904896031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1503311923730" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
 			<!-- ==================footer======================= -->
@@ -983,7 +983,7 @@
 									</a>
 								</li>
 							</ul>
-						</div>						
+						</div>
 				</div>
 			</footer>
 			<!-- ==================end of footer================ -->
@@ -1005,15 +1005,11 @@
 		</ul>
 	</div>
   <!--<div id="mobile-menu__overlay"></div>-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-	<!-- <script src="./js/jquery.fullpage.min.js"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa3Dwo3IxCqa3Z-_ZZpCGbElFEMKxfKcg" type="text/javascript"></script>
 	<script src="js/modules/overlay-menu.js"></script>
 	<script src="js/modules/slider.js"></script>
 	<script src="js/modules/menu-accordion.js"></script>
   <script src="js/modules/map.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFEncp1nqhNSvTuFURaXmaz1zNu5_yVAg&amp;loading=async&amp;libraries=marker&amp;callback=initMap"></script>
   <script src="js/main.js"></script>
 </body>
 

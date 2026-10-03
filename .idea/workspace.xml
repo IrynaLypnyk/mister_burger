@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="796ef1a4-0284-45da-984c-489670b01f9a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/modules/menu-accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/menu-accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modules/overlay-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/overlay-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modules/slider.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="80" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -179,15 +189,83 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.5907321550138191" />
+      <entry key="MS500" value="2.088303177643808" />
+      <entry key="S2" value="2.8077527361951664" />
+      <entry key="S5" value="3.5871204732853057" />
+      <entry key="S10" value="4.139553414263552" />
+      <entry key="S30" value="4.668955775593441" />
+      <entry key="S60" value="4.828171860390913" />
+      <entry key="M2" value="4.912444255391737" />
+      <entry key="M5" value="4.964575042726739" />
+      <entry key="M10" value="4.982219676412647" />
+      <entry key="M15" value="4.988131319345928" />
+      <entry key="M30" value="4.994058080092308" />
+      <entry key="H1" value="4.997027142562239" />
+      <entry key="H2" value="4.998513096586155" />
+      <entry key="H4" value="4.999256429578812" />
+      <entry key="D1" value="4.999876055104936" />
+      <entry key="W1" value="4.9999822931825" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.7871339384989776" />
+      <entry key="MS500" value="1.7217148633845787" />
+      <entry key="S2" value="2.662159633709643" />
+      <entry key="S5" value="3.506017737875947" />
+      <entry key="S10" value="4.090893725863687" />
+      <entry key="S30" value="4.650147977286387" />
+      <entry key="S60" value="4.818379062402459" />
+      <entry key="M2" value="4.907444959388632" />
+      <entry key="M5" value="4.9625498669065" />
+      <entry key="M10" value="4.981202780524822" />
+      <entry key="M15" value="4.987452426548499" />
+      <entry key="M30" value="4.993718151366013" />
+      <entry key="H1" value="4.996857057387026" />
+      <entry key="H2" value="4.998428023766714" />
+      <entry key="H4" value="4.99921388560753" />
+      <entry key="D1" value="4.999868963392533" />
+      <entry key="W1" value="4.999981280054998" />
+    </decayedShown>
+  </component>
   <component name="PhpServers">
     <servers />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6,
+  "fromUser": false
+}]]></component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="367" />
     <option name="height" value="816" />
   </component>
+  <component name="ProjectId" id="3KCKCyjzTVrm4RsryEUK6nTWgJH" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -204,7 +282,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -258,12 +335,30 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../битрейд" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/irynalypnyk/projects/my-portfolio/MY-PROJECTS/mister_burger",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\lirra\projects\loftschool\burgers\Burgers_final\img\content" />
@@ -272,17 +367,12 @@
       <recent name="D:\lirra\projects\loftschool\burgers\site\js\modules" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -318,6 +408,7 @@
       <workItem from="1537353344229" duration="1466000" />
       <workItem from="1537767440648" duration="1886000" />
       <workItem from="1537854661956" duration="16110000" />
+      <workItem from="1791055986657" duration="5419000" />
     </task>
     <servers />
   </component>
@@ -382,15 +473,10 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scss/_sections/_order.scss">
