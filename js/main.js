@@ -25,18 +25,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isInteractive(target) {
-        return target.closest('input, textarea, select, button, [contenteditable]:not([contenteditable="false"]), #map') ||
+        return target.closest('input, textarea, select, button, [contenteditable]:not([contenteditable="false"])') ||
+            (target.closest('#map') && document.fullscreenElement) ||
             document.querySelector('#hamburger-btn.opened');
     }
 
+    // Capture scroll gestures before Google Maps can stop their propagation.
     wrapper.addEventListener('wheel', function (event) {
         if (event.ctrlKey || isInteractive(event.target) || Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
         event.preventDefault();
         scrollBySection(event.deltaY > 0 ? 1 : -1);
-    }, {passive: false});
+    }, {passive: false, capture: true});
 
     document.addEventListener('keydown', function (event) {
-        if (isInteractive(event.target) || event.altKey || event.ctrlKey || event.metaKey) return;
+        if (isInteractive(event.target) || event.target.closest('#map') || event.altKey || event.ctrlKey || event.metaKey) return;
         if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
             event.preventDefault();
             scrollBySection(event.key === 'ArrowDown' ? 1 : -1);
@@ -55,22 +57,22 @@ document.addEventListener('DOMContentLoaded', function () {
     wrapper.addEventListener('touchstart', function (event) {
         gesture = event.touches.length === 1 && !isInteractive(event.target)
             ? {x: event.touches[0].clientX, y: event.touches[0].clientY} : null;
-    }, {passive: true});
+    }, {passive: true, capture: true});
     wrapper.addEventListener('touchmove', function (event) {
         if (event.touches.length !== 1) { gesture = null; return; }
         if (!gesture) return;
         const dx = event.touches[0].clientX - gesture.x;
         const dy = event.touches[0].clientY - gesture.y;
         if (Math.abs(dy) > Math.abs(dx) && event.cancelable) event.preventDefault();
-    }, {passive: false});
+    }, {passive: false, capture: true});
     wrapper.addEventListener('touchend', function (event) {
         if (!gesture) return;
         const dx = event.changedTouches[0].clientX - gesture.x;
         const dy = event.changedTouches[0].clientY - gesture.y;
         gesture = null;
         if (Math.abs(dy) >= 50 && Math.abs(dy) > Math.abs(dx)) scrollBySection(dy < 0 ? 1 : -1);
-    });
-    wrapper.addEventListener('touchcancel', function () { gesture = null; });
+    }, {capture: true});
+    wrapper.addEventListener('touchcancel', function () { gesture = null; }, {capture: true});
 
     document.querySelectorAll('.team-acco__item').forEach(function (item) {
         item.addEventListener('click', function () {

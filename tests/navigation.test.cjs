@@ -2,7 +2,8 @@ const vm = require('node:vm');
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const events = new Map();
-const make = () => ({classList:{active:false,contains(){return this.active},toggle(_,v){this.active=v}},addEventListener(name,fn){events.set(this.id+name,fn)}});
+const eventOptions = new Map();
+const make = () => ({classList:{active:false,contains(){return this.active},toggle(_,v){this.active=v}},addEventListener(name,fn,options){events.set(this.id+name,fn);eventOptions.set(this.id+name,options)}});
 const sections=Array.from({length:8},make); sections[0].classList.active=true;
 const wrapper={...make(),id:'wrapper',scrollTop:0};
 const content={style:{}};
@@ -13,16 +14,35 @@ vm.runInNewContext(fs.readFileSync('js/main.js','utf8'),context);
 events.get('docDOMContentLoaded')();
 const current=()=>sections.findIndex(s=>s.classList.active);
 const touch=(x,y)=>({clientX:x,clientY:y});
-function swipe(dx,dy){events.get('wrappertouchstart')({target,touches:[touch(100,200)]});events.get('wrappertouchend')({changedTouches:[touch(100+dx,200+dy)]})}
+function swipe(dx,dy,swipeTarget=target){events.get('wrappertouchstart')({target:swipeTarget,touches:[touch(100,200)]});events.get('wrappertouchend')({changedTouches:[touch(100+dx,200+dy)]})}
 swipe(0,-80);assert.equal(current(),1,'up swipe advances');
 swipe(0,80);assert.equal(current(),0,'down swipe goes back');
 swipe(100,-20);assert.equal(current(),0,'horizontal gesture ignored');
 swipe(0,-20);assert.equal(current(),0,'small gesture ignored');
 events.get('wrappertouchstart')({target,touches:[touch(0,100)]});events.get('wrappertouchcancel')();events.get('wrappertouchend')({changedTouches:[touch(0,0)]});assert.equal(current(),0,'cancelled gesture ignored');
-events.get('wrappertouchstart')({target:{closest:()=>({})},touches:[touch(0,100)]});events.get('wrappertouchend')({changedTouches:[touch(0,0)]});assert.equal(current(),0,'form/map touches ignored');
+events.get('wrappertouchstart')({target:{closest:()=>({})},touches:[touch(0,100)]});events.get('wrappertouchend')({changedTouches:[touch(0,0)]});assert.equal(current(),0,'form touches ignored');
 events.get('wrappertouchstart')({target,touches:[touch(0,100)]});events.get('wrappertouchmove')({touches:[touch(0,90),touch(20,90)]});events.get('wrappertouchend')({changedTouches:[touch(0,0)]});assert.equal(current(),0,'multi-touch ignored');
 const key=(key,targetOverride=target)=>events.get('dockeydown')({key,target:targetOverride,preventDefault(){}});
 key('ArrowDown');assert.equal(current(),1);key('ArrowUp');assert.equal(current(),0);key('ArrowUp');assert.equal(current(),0,'first section boundary');
 key('ArrowDown',{closest:()=>({})});assert.equal(current(),0,'form keyboard preserved');
 for(let i=0;i<10;i++) key('ArrowDown');assert.equal(current(),7,'last section boundary');
-console.log('PASS: swipe direction, threshold, horizontal/cancelled/multi-touch gestures, interactive exclusions, keyboard and section boundaries');
+const mapTarget={closest:selector=>selector.includes('#map')?{}:null};
+const wheel=(deltaY,overrides={})=>events.get('wrapperwheel')({target:mapTarget,deltaX:0,deltaY,preventDefault(){},...overrides});
+wheel(100);assert.equal(current(),7,'scrolling down on the map stays at the last section');
+wheel(-100);assert.equal(current(),6,'scrolling up over the map returns to the order section');
+key('ArrowDown');
+swipe(0,80,mapTarget);assert.equal(current(),6,'one-finger swipe down over the map returns to the order section');
+key('ArrowDown');
+events.get('wrappertouchstart')({target:mapTarget,touches:[touch(0,100)]});
+events.get('wrappertouchmove')({touches:[touch(0,90),touch(20,90)]});
+events.get('wrappertouchend')({changedTouches:[touch(0,200)]});
+assert.equal(current(),7,'two-finger map gesture does not switch sections');
+wheel(-100,{ctrlKey:true});assert.equal(current(),7,'pinch zoom does not switch sections');
+key('ArrowUp',mapTarget);assert.equal(current(),7,'map arrow key controls preserved');
+document.fullscreenElement={};
+wheel(-100);swipe(0,80,mapTarget);assert.equal(current(),7,'fullscreen map gestures do not switch sections');
+document.fullscreenElement=null;
+for(const name of ['wheel','touchstart','touchmove','touchend','touchcancel']) {
+    assert.equal(eventOptions.get('wrapper'+name).capture,true,name+' is handled before map event propagation stops');
+}
+console.log('PASS: section navigation, map wheel/swipe escape, multi-touch, pinch, fullscreen, keyboard and form interactions');

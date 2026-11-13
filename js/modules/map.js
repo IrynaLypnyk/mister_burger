@@ -6,6 +6,7 @@ window.initMap = function () {
         zoom: 13,
         center: {lat: 50.4673036, lng: 30.5208456},
         scrollwheel: false,
+        gestureHandling: 'cooperative',
         mapTypeControl: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,

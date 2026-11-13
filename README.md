@@ -50,7 +50,7 @@ The checks require Node.js. Run from the project root:
 node tests/navigation.test.cjs
 ```
 
-The test covers swipe logic; ignoring short, horizontal, cancelled, and multi-touch gestures; preserving form and map interactions; keyboard navigation; and section boundaries. It uses a simulated DOM and does not replace testing on a real touchscreen device.
+The test covers swipe logic; ignoring short, horizontal, cancelled, and multi-touch gestures; scrolling back from the map with the wheel or a one-finger swipe; preserving form, map keyboard, and fullscreen map interactions; keyboard navigation; and section boundaries. It uses a simulated DOM and does not replace testing on a real touchscreen device.
 
 ## Demo limitations
 
